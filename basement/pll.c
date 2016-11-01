@@ -19,7 +19,7 @@ void System_ClockInit(void)
 {
 	SysCtlClockSet(SYSCTL_SYSDIV_2 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN |            /*200 / 2 Mhz*/
 	                   SYSCTL_XTAL_16MHZ);
-	IntMasterEnable();
+	IntMasterEnable();															  /*Enable interrupts to the processor*/
 }
 
 
