@@ -13,16 +13,6 @@
 #define GPIO_MPU_INT 		GPIO_PIN_1
 #define GPIO_MPU_BASE 		GPIO_PORTB_BASE
 #define INT_MPU				INT_GPIOB
-/**********************#Function***********************************/
-void Exti_Init(void);
-
-void Exti_Init(void);
-
-void Control_Isr(void);
-
-void Exti_quit(void);
-
-void Exti_WidthGet(Chx_Width * chx);
 /**********************#Data type***********************************/
 typedef struct
 {
@@ -36,5 +26,15 @@ typedef struct
 	int16_t ch8;
 
 }Chx_Width;
+/**********************#Function***********************************/
+void Exti_Init(void);
+
+void Exti_Init(void);
+
+void Control_Isr(void);
+
+void Exti_quit(void);
+
+void Exti_WidthGet(Chx_Width * chx);
 
 #endif
