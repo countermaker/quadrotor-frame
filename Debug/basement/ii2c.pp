@@ -13,6 +13,7 @@ basement/ii2c.obj: C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111
 basement/ii2c.obj: C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h
 basement/ii2c.obj: C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111/driverlib/uart.h
 basement/ii2c.obj: ../basement/delay.h
+basement/ii2c.obj: ../basement/ii2c.h
 
 ../basement/ii2c.c: 
 D:/CCS/ccsv6/tools/compiler/ti-cgt-arm_5.2.2/include/stdbool.h: 
@@ -27,3 +28,4 @@ C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111/driverlib/pin_map.
 C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h: 
 C:/Users/home/Desktop/TI/TI\ Code/TivaWare_C_Series-2.1.2.111/driverlib/uart.h: 
 ../basement/delay.h: 
+../basement/ii2c.h: 

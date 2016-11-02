@@ -5,19 +5,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "stdio.h"
+/**********************#define*********************************/
 #define u8 unsigned char
-
-typedef struct
-{
-  int16_t acc_x;
-  int16_t acc_y;
-  int16_t acc_z;
-  int16_t gyro_x;  //rad/s
-  int16_t gyro_y;
-  int16_t gyro_z;
-  int16_t temperature;
-} Mpu6050_Type;
-
 //#define ACC_SENSITIVITY  16384.0f /* +- 2g */
 #define ACC_SENSITIVITY  8192.0f /* +- 4g */
 // #define GYRO_SENSITIVITY 32.8f    /* +- 1000 degree/s */
@@ -117,7 +106,18 @@ typedef struct
 
 #define AK8963_Device_ID            0x48
 #define MPU6500_Device_ID           0x71
-
+/**********************#Data type***********************************/
+typedef struct
+{
+  int16_t acc_x;
+  int16_t acc_y;
+  int16_t acc_z;
+  int16_t gyro_x;  //rad/s
+  int16_t gyro_y;
+  int16_t gyro_z;
+  int16_t temperature;
+} Mpu6050_Type;
+/**********************#Function***********************************/
 u8 MPU_Init(void); 									
 
 u8 MPU_Getaccelerometergyroscope(Mpu6050_Type* Mpu6050_Value);

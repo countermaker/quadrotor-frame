@@ -1,10 +1,3 @@
-/*
- * global.h
- *
- *  Created on: 2016Äê6ÔÂ10ÈÕ
- *      Author: home
- */
-
 #ifndef GLOBAL_H_
 #define GLOBAL_H_
 #include "data.h"

@@ -2,6 +2,7 @@
 #include "driverlib/gpio.h"
 #include "driverlib/sysctl.h"
 #include "inc/hw_memmap.h"
+#include "sonar.h"
 /**
   * @brief  Init the sonar
   * @param  None
@@ -9,8 +10,8 @@
   */
 void Sonar_GpioInit(void)
 {
-	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-	GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1);
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_SONAR);
+	GPIOPinTypeGPIOOutput(GPIO_SONAR_BASE, GPIO_PIN_SONAR);
 }
 /**
   * @brief  Delay 10us
@@ -34,9 +35,9 @@ void Sonar_Delay10us(void)
   */
 void Sonar_Encourage(void)
 {
-	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, GPIO_PIN_1);
+	GPIOPinWrite(GPIO_SONAR_BASE, GPIO_PIN_SONAR, GPIO_PIN_SONAR);
 	Sonar_Delay10us();
-	GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0x0);
+	GPIOPinWrite(GPIO_SONAR_BASE, GPIO_PIN_SONAR, 0x0);
 }
 /**
   * @brief  Get the distance

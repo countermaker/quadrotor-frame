@@ -1,6 +1,6 @@
 #include "basement.h"
 /**
-  * @brief  Init the hardware
+  * @brief  Init the quadrotor's hardware
   * @param  None
   * @retval None
   */
